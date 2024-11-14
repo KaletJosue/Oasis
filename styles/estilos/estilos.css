@@ -50,6 +50,8 @@ header nav img {
     width: 100px;
     cursor: pointer;
     transition: all .2s ease;
+    animation: revealBottom 1s forwards;
+    z-index: 1;
 }
 
 header nav img:hover {
@@ -88,6 +90,25 @@ header nav ul li:hover::after {
     width: 100%;
 }
 
+header nav ul li:first-child {
+    animation: revealTop 1s forwards;
+}
+header nav ul li:nth-child(2) {
+    animation: revealTop 1.2s forwards;
+}
+header nav ul li:nth-child(3) {
+    animation: revealTop 1.4s forwards;
+}
+header nav ul li:nth-child(4) {
+    animation: revealTop 1.6s forwards;
+}
+header nav ul li:nth-child(5) {
+    animation: revealTop 1.8s forwards;
+}
+header nav ul label {
+    animation: revealTop 2s forwards;
+}
+
 .hero {
     padding: 0rem 3rem 1rem;
     position: relative;
@@ -100,6 +121,8 @@ header nav ul li:hover::after {
     transform: translateY(-50%) rotate(15deg);
     right: -200px;
     width: 800px;
+    filter: drop-shadow(1px 1rem 1rem black);
+    animation: revealRight 1s forwards;
 }
 
 .hero .container_hero {
@@ -121,6 +144,7 @@ header nav ul li:hover::after {
     color: white;
     font-weight: 400;
     font-size: 13px;
+    animation: revealTop 1.5s forwards;
 }
 
 .hero .container_hero h1 {
@@ -129,6 +153,7 @@ header nav ul li:hover::after {
     font-weight: 1000;
     width: 300px;
     margin-bottom: 1rem;
+    animation: revealTop 1.5s forwards;
 }
 
 .hero .container_hero a {
@@ -139,6 +164,7 @@ header nav ul li:hover::after {
     color: white;
     display: inline-block;
     transition: all .2s ease;
+    animation: revealTop 1.5s forwards;
 }
 
 .hero .container_hero a:hover {
@@ -190,6 +216,16 @@ header nav ul li:hover::after {
 .hero .container_hero .container_redes i:hover {
     background-color: #f0f0f0;
     color: #000;
+}
+
+.hero .container_hero .container_redes i:first-child {
+    animation: revealLeft 1s forwards;
+}
+.hero .container_hero .container_redes i:nth-child(2) {
+    animation: revealLeft 1.3s forwards;
+}
+.hero .container_hero .container_redes i:last-child {
+    animation: revealLeft 1.6s forwards;
 }
 
 .cards {
@@ -448,6 +484,49 @@ header nav ul li:hover::after {
     transform: translateY(-50%);
 }
 
+@keyframes revealBottom {
+    0% {
+        transform: translateY(200px) scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes revealTop {
+    0% {
+        transform: translateY(-100vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealLeft {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealRight {
+    0% {
+        transform: translate(100vw) scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0 -50%) scale(1) rotate(15deg);
+        opacity: 1;
+    }
+}
+
 @media (width < 1100px) {
     .hero img {
         right: -350px;
@@ -556,6 +635,7 @@ header nav ul li:hover::after {
     header nav {
         padding: 2rem 1rem;
     }
+
     .hero {
         padding: 0 1rem 1rem;
     }
