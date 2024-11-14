@@ -1,14 +1,6 @@
-const sr = ScrollReveal({
-    distance: '65px',
-    duration: 2600,
-    delay: 450,
-    rest: true
-})
+var palanca = document.querySelector('.theme-switch__checkbox')
+var body = document.body
 
-sr.reveal('.container', { delay: 100, origin: 'top' });
-
-var login = document.getElementById("login")
-
-login.addEventListener('click', () => {
-    alert("Estamos trabajando en actualizaciones")
+palanca.addEventListener('click', () => {
+    body.classList.toggle('dark-mode')
 })
