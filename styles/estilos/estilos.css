@@ -9,6 +9,10 @@
     list-style: none;
 }
 
+html::-webkit-scrollbar {
+    width: 0;
+}
+
 .loader {
     position: fixed;
     width: 100vw;
