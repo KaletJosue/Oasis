@@ -745,6 +745,10 @@ html {
         font-size: 50px;
         line-height: 60px;
     }
+
+    .services .img_service {
+        width: 400px;
+    }
 }
 
 @media (width < 1200px) {
