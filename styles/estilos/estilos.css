@@ -20,7 +20,7 @@ html {
 .loader {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -504,8 +504,7 @@ html {
 }
 
 .services .text_services p {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
     margin-bottom: .5rem;
     width: 500px;
 }
@@ -630,6 +629,242 @@ html {
     font-size: 14px;
 }
 
+.whyus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 20rem;
+    gap: 1rem;
+}
+
+.whyus img {
+    width: 800px;
+    filter: drop-shadow(1rem 1px 1rem rgba(0, 0, 0, 0.264));
+}
+
+.whyus .text_whyus {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.whyus .text_whyus h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 95px;
+    margin-bottom: 1rem;
+}
+
+.whyus .text_whyus h1 span {
+    background-image: linear-gradient(90deg, #9867E0, #E067D4);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.whyus .text_whyus p {
+    font-size: 14px;
+}
+
+.stadistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 10rem;
+}
+
+.stadistics .stadistic {
+    background-color: #f4f4f4;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.stadistics .stadistic h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #8459c3;
+}
+
+.stadistics .stadistic p {
+    font-size: 14px;
+}
+
+#know {
+    gap: 2rem;
+    padding: 10rem 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#know::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: solid 60px #8359c375;
+    position: absolute;
+    border-radius: 50%;
+    left: -200px;
+    top: 30px;
+}
+
+#know::before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    right: -200px;
+    bottom: 30px;
+    background-color: #8359c375;
+}
+
+#know .text_know {
+    width: 900px;
+}
+
+#know .text_know h1 {
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+}
+
+#know .text_know p {
+    color: white;
+}
+
+#know .text_know a {
+    padding: .7rem 2rem;
+    border: solid 1.5px white;
+    display: inline-block;
+    margin-top: .5rem;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+#know .text_know a:hover {
+    background-color: white;
+    font-weight: 600;
+    color: #8459c3;
+    transform: translateX(20px);
+}
+
+#know img {
+    width: 400px;
+}
+
+.last {
+    background-image: linear-gradient(180deg, #9867E0, #b267e0);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+    position: relative;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+footer .container .sec p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+footer .container .sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.26);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 50%;
+}
+
+footer .container .quicklins {
+    position: relative;
+}
+
+footer .container .quicklins ul li {
+    list-style: none;
+}
+
+footer .container .quicklins ul li a {
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer .container .contact .info {
+    position: relative;
+}
+
+footer .container .contact .info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .container .contact .info li span {
+    color: white;
+    font-size: 20px;
+}
+
+footer .container .contact .info li a {
+    color: white;
+}
+
+.copyrightText {
+    width: 100%;
+    padding: 20px 100px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.hr {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.51);
+    border: none;
+    height: 1px;
+}
+
 @keyframes correBarra {
     0% {
         width: 0%;
@@ -724,6 +959,18 @@ html {
     .cards {
         padding: 1rem 10rem 5rem;
     }
+
+    .whyus {
+        gap: 3rem;
+    }
+
+    .whyus img {
+        width: 500px;
+    }
+
+    #know {
+        padding: 10rem 20rem;
+    }
 }
 
 @media (width < 1500px) {
@@ -748,6 +995,15 @@ html {
 
     .services .img_service {
         width: 400px;
+    }
+
+    .whyus .text_whyus h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    #know {
+        padding: 10rem 10rem;
     }
 }
 
@@ -812,6 +1068,15 @@ html {
         font-size: 50px;
         line-height: 45px;
     }
+
+    .whyus .text_whyus {
+        width: 300px;
+    }
+
+    .whyus .text_whyus h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
 @media (width < 1000px) {
@@ -823,6 +1088,51 @@ html {
     .action img {
         width: 600px;
         margin-right: -16rem;
+    }
+
+    .whyus img {
+        width: 450px;
+    }
+
+    .stadistics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0 10rem 10rem 10rem;
+    }
+
+    .stadistics .stadistic {
+        width: 100%;
+    }
+
+    .stadistics .stadistic:first-child {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .stadistics .stadistic:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1/5;
+    }
+
+    .stadistics .stadistic:last-child {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .copyrightText {
+        padding: 20px 40px;
     }
 }
 
@@ -901,6 +1211,47 @@ html {
 
     .action .circle1 {
         left: -450px;
+    }
+
+    .whyus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10rem 2rem;
+        gap: 2rem;
+    }
+
+    .whyus .text_whyus {
+        width: 100%;
+    }
+
+    .stadistics {
+        padding: 0 5rem 5rem 5rem;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #know {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 1rem;
+    }
+
+    #know .text_know {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    #know .text_know,
+    #know img {
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -1012,6 +1363,26 @@ html {
         padding: 2rem;
         height: 50%;
     }
+
+    .whyus img {
+        width: 350px;
+    }
+
+    .stadistics {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 5rem 1rem;
+        margin-top: -5rem;
+    }
+
+    .stadistics .stadistic {
+        height: 150px;
+    }
+
+    #know .text_know h1 {
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (width < 450px) {
@@ -1054,6 +1425,36 @@ html {
     .services .text_services button {
         padding: .7rem 1rem;
         flex: 0 0 auto;
+    }
+
+    .whyus {
+        padding: 5rem 1rem;
+    }
+
+    .whyus .text_whyus h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .whyus img {
+        width: 90%;
+    }
+
+    .stadistics {
+        margin-top: 0;
+    }
+
+    .stadistics .stadistic {
+        padding: 0 2rem;
+        height: 150px;
+    }
+
+    .stadistics .stadistic h1 {
+        font-size: 20px;
+    }
+
+    #know img {
+        width: 90%;
     }
 }
 
